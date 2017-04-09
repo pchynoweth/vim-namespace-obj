@@ -16,7 +16,11 @@
 "along with vim-namespace-obj.  If not, see <http://www.gnu.org/licenses/>.
 
 function! vim_namespace_obj#SelectNamespace(mode) " {{{
+    let l:startline = line(".")
     normal! wbv
-    call search('::')
+    let l:colonline = search('::')
+    if l:colonline != l:startline
+        throw "No namespace found"
+    endif
     execute 'normal!'  . a:mode
 endfunction " }}}
