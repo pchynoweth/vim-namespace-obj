@@ -18,9 +18,9 @@
 " this::is::a::test::namespace
 
 function! <SID>SelectNamespace(mode)
-    normal! bv
+    normal! wbv
     call search('::')
-    normal! a:mode
+    execute 'normal!'  . a:mode
 endfunction
 
 onoremap <silent>an :<C-u>call <SID>SelectNamespace('l')<CR>
