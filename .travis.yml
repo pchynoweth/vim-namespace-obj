@@ -8,6 +8,7 @@ script: |
   pwd
   vim -Nu <(cat << VIMRC
   filetype off
+  set nocompatible
   set rtp+=vader.vim
   set rtp+=.
   filetype plugin indent on
