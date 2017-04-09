@@ -1,0 +1,39 @@
+Given:
+  this::is::a::test::namespace
+
+Execute (remove first):
+  execute 'normal' . ' dan'
+
+Expect:
+  is::a::test::namespace
+
+Execute (remove second):
+  execute 'normal' . ' wwdan'
+
+Expect:
+  this::a::test::namespace
+
+Execute (remove second and repeat):
+  execute 'normal' . ' wwdan.'
+
+Expect:
+  this::test::namespace
+
+Execute (remove first):
+  execute 'normal' . ' din'
+
+Expect:
+  ::is::a::test::namespace
+
+Execute (remove second):
+  execute 'normal' . ' wwdin'
+
+Expect:
+  this::::a::test::namespace
+
+Execute (remove second and repeat):
+  execute 'normal' . ' wwdinw.'
+
+Expect:
+  this::::::test::namespace
+
