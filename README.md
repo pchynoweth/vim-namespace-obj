@@ -7,8 +7,10 @@ I wrote this plugin to fulfill a specific requirement I have to change or remove
 namespace-like text objects from C++ files.  By this I mean names separated by a
 double colon ('::').
 
+The motion should be fully repeatable using the '.' (dot) operator.
+
 Usage
-=====
+-----
 By default this plugin will not create any key mappings.  You can opt for the
 default mappings by adding the following to your vimrc:
 
