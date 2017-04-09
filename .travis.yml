@@ -2,6 +2,7 @@ language: vim
 
 before_script: |
   git clone https://github.com/junegunn/vader.vim.git
+  git clone https://github.com/tpope/vim-repeat
 
 script: |
   vim --version
@@ -10,6 +11,7 @@ script: |
   filetype off
   let g:vim_namespace_obj_map_keys = 1
   set rtp+=vader.vim
+  set rtp+=vim-repeat
   set rtp+=.
   filetype plugin indent on
   syntax enable
