@@ -5,6 +5,7 @@ before_script: |
 
 script: |
   ls
+  pwd
   vim -Nu <(cat << VIMRC
   filetype off
   set rtp+=vader.vim
