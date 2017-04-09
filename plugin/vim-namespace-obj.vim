@@ -23,5 +23,7 @@ function! <SID>SelectNamespace(mode)
     normal! a:mode
 endfunction
 
+onoremap <silent>an :<C-u>call <SID>SelectNamespace('l')<CR>
+onoremap <silent>in :<C-u>call <SID>SelectNamespace('h')<CR>
 vnoremap <silent>an :<C-u>call <SID>SelectNamespace('l')<CR>
 vnoremap <silent>in :<C-u>call <SID>SelectNamespace('h')<CR>
