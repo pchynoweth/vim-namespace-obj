@@ -17,7 +17,18 @@
 
 " this::is::a::test::namespace
 
-onoremap <silent>an :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
-onoremap <silent>in :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
-vnoremap <silent>an :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
-vnoremap <silent>in :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
+onoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
+onoremap <Plug>SelectInnerNamespace :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
+vnoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
+vnoremap <Plug>SelectInnerNamespace :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
+
+if !exists('g:vim_namespace_obj_map_keys')
+    let g:vim_namespace_obj_map_keys = 0
+endif
+
+if g:vim_namespace_obj_map_keys
+    onoremap <silent>an <Plug>SelectANamespace
+    onoremap <silent>in <Plug>SelectInnerNamespace
+    vnoremap <silent>an <Plug>SelectANamespace
+    vnoremap <silent>in <Plug>SelectInnerNamespace
+endif
