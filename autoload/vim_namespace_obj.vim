@@ -17,7 +17,7 @@
 
 " this::is::a::test::namespace
 
-function! vim-namespace-obj#SelectNamespace(mode) " {{{
+function! vim_namespace_obj#SelectNamespace(mode) " {{{
     normal! wbv
     call search('::')
     execute 'normal!'  . a:mode

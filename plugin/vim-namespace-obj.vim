@@ -17,7 +17,7 @@
 
 " this::is::a::test::namespace
 
-onoremap <silent>an :<C-u>call vim-namespace-obj#SelectNamespace('l')<CR>
-onoremap <silent>in :<C-u>call vim-namespace-obj#SelectNamespace('h')<CR>
-vnoremap <silent>an :<C-u>call vim-namespace-obj#SelectNamespace('l')<CR>
-vnoremap <silent>in :<C-u>call vim-namespace-obj#SelectNamespace('h')<CR>
+onoremap <silent>an :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
+onoremap <silent>in :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
+vnoremap <silent>an :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
+vnoremap <silent>in :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
