@@ -15,8 +15,6 @@
 "You should have received a copy of the GNU General Public License
 "along with vim-namespace-obj.  If not, see <http://www.gnu.org/licenses/>.
 
-" this::is::a::test::namespace
-
 onoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
 onoremap <Plug>SelectInnerNamespace :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
 vnoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
