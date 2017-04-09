@@ -4,11 +4,10 @@ before_script: |
   git clone https://github.com/junegunn/vader.vim.git
 
 script: |
-  ls
-  pwd
   vim -Nu <(cat << VIMRC
-  filetype off
   set nocompatible
+  filetype off
+  let g:vim_namespace_obj_map_keys = 1
   set rtp+=vader.vim
   set rtp+=.
   filetype plugin indent on
