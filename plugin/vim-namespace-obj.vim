@@ -27,8 +27,8 @@ if !exists('g:vim_namespace_obj_map_keys')
 endif
 
 if g:vim_namespace_obj_map_keys
-    onoremap <silent>an <Plug>SelectANamespace
-    onoremap <silent>in <Plug>SelectInnerNamespace
-    vnoremap <silent>an <Plug>SelectANamespace
-    vnoremap <silent>in <Plug>SelectInnerNamespace
+    omap <silent>an <Plug>SelectANamespace
+    omap <silent>in <Plug>SelectInnerNamespace
+    vmap <silent>an <Plug>SelectANamespace
+    vmap <silent>in <Plug>SelectInnerNamespace
 endif
