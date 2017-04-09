@@ -13,11 +13,12 @@ Execute (remove second):
 Expect:
   this::a::test::namespace
 
-Execute (remove second and repeat):
-  execute 'normal' . ' wwdan.'
-
-Expect:
-  this::test::namespace
+" requires vim >=8.0
+"Execute (remove second and repeat):
+"  execute 'normal' . ' wwdan.'
+"
+"Expect:
+"  this::test::namespace
 
 Execute (remove first):
   execute 'normal' . ' din'
@@ -31,9 +32,10 @@ Execute (remove second):
 Expect:
   this::::a::test::namespace
 
-Execute (remove second and repeat):
-  execute 'normal' . ' wwdinw.'
-
-Expect:
-  this::::::test::namespace
-
+" requires vim >=8.0
+"Execute (remove second and repeat):
+"  execute 'normal' . ' wwdinw.'
+"
+"Expect:
+"  this::::::test::namespace
+"
