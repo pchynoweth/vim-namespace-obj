@@ -11,4 +11,5 @@ script: |
   set rtp+=vader.vim
   set rtp+=.
   filetype plugin indent on
-  syntax enable) -c 'Vader! test/*' > /dev/null
+  syntax enable
+  VIMRC) -c 'Vader! test/*' > /dev/null
