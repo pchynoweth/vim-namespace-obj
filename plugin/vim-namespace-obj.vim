@@ -15,10 +15,10 @@
 "You should have received a copy of the GNU General Public License
 "along with vim-namespace-obj.  If not, see <http://www.gnu.org/licenses/>.
 
-onoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR> :call repeat#set("\<Plug>SelectANamespace")<CR>
-onoremap <Plug>SelectInnerNamespace :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR> :call repeat#set("\<Plug>SelectInnerNamespace")<CR>
-vnoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR> :call repeat#set("\<Plug>SelectANamespace")<CR>
-vnoremap <Plug>SelectInnerNamespace :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR> :call repeat#set("\<Plug>SelectInnerNamespace")<CR>
+onoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
+onoremap <Plug>SelectInnerNamespace :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
+vnoremap <Plug>SelectANamespace :<C-u>call vim_namespace_obj#SelectNamespace('l')<CR>
+vnoremap <Plug>SelectInnerNamespace :<C-u>call vim_namespace_obj#SelectNamespace('h')<CR>
 
 if !exists('g:vim_namespace_obj_map_keys')
     let g:vim_namespace_obj_map_keys = 0
