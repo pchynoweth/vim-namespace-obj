@@ -17,7 +17,8 @@
 
 " this::is::a::test::namespace
 
-onoremap <silent>an :<C-u>call vim-namespace-obj#SelectNamespace('l')<CR>
-onoremap <silent>in :<C-u>call vim-namespace-obj#SelectNamespace('h')<CR>
-vnoremap <silent>an :<C-u>call vim-namespace-obj#SelectNamespace('l')<CR>
-vnoremap <silent>in :<C-u>call vim-namespace-obj#SelectNamespace('h')<CR>
+function! vim-namespace-obj#SelectNamespace(mode) " {{{
+    normal! wbv
+    call search('::')
+    execute 'normal!'  . a:mode
+endfunction " }}}
