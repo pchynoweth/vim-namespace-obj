@@ -1,6 +1,8 @@
 vim-namespace-obj
 =================
 
+[![Build Status](https://travis-ci.org/pchynoweth/vim-namespace-obj.svg?branch=master)](https://travis-ci.org/pchynoweth/vim-namespace-obj)
+
 Description
 -----------
 I wrote this plugin to fulfill a specific requirement I have to change or remove
