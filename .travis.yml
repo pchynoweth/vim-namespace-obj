@@ -12,4 +12,4 @@ script: |
   set rtp+=.
   filetype plugin indent on
   syntax enable
-  VIMRC) -c 'Vader! test/*' > /dev/null
+  EOF) -c 'Vader! test/*' > /dev/null
