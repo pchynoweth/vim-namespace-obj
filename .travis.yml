@@ -7,6 +7,7 @@ script: |
   vim -Nu <(cat << VIMRC
   filetype off
   set rtp+=vader.vim
+  set rtp+=vim-namespace-obj
   set rtp+=.
   set rtp+=after
   filetype plugin indent on
