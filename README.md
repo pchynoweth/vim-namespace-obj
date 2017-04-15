@@ -38,6 +38,9 @@ Installation
 If you're using [Vundle](https://github.com/VundleVim/Vundle.vim),
 just add `Plugin 'pchynoweth/vim-namespace-obj'` to your .vimrc and run `:PluginInstall`.
 
+If you're using [vim-plug](https://github.com/junegunn/vim-plug),
+just add `Plug 'pchynoweth/vim-namespace-obj'` to your .vimrc and run `:PlugInstall`.
+
 If you're using [pathogen](https://github.com/tpope/vim-pathogen),
 add this repo to your bundle directory.
 
